@@ -86,6 +86,7 @@ button.addEventListener('click', function (event) {
         cauldronList.removeChild(remove);
         elementsList.appendChild(remove);
     }
+    showResult('');
 });
 
 // search
