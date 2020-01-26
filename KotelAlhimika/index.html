@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <title>Котёл алхимика</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+<div class="container">
+
+    <div class="ingredientSection">
+        <h2>Доступные элементы:</h2>
+        <form action="">
+            <!-- Поле для фильтрации алхимических элементов -->
+            <input type="text" id="searchElement" placeholder="Поиск элемента...">
+            <button id="reset">Reset</button>
+        </form>
+        <!-- Список доступных элементов (два мы уже положили в котёл)-->
+        <ul class="availableElements" id="ingredientsList">
+        <li data-element="earth" draggable="true">земля</li>
+        <li data-element="air" draggable="true">воздух</li>
+        <li data-element="dust" draggable="true">пыль</li>
+        <li data-element="swamp" draggable="true">болото</li>
+        <li data-element="energy" draggable="true">энергия</li>
+        <li data-element="stone" draggable="true">камень</li>
+        <li data-element="life" draggable="true">жизнь</li>
+        <li data-element="milk" draggable="true">молоко</li>
+        <li data-element="sourcream" draggable="true">сметанка</li>
+        </ul>
+        <p>*положи элемент в котёл</p>
+    </div>
+
+    <div class="cauldronSection">
+        <!-- Элементы в котле для смешивания -->
+    <div class="cauldronContainer">
+        <h2>Элементы в котле:</h2>
+        <ul class="ingredientsInCauldron" id="cauldronList">
+            <li data-element="fire" draggable="true">огонь</li>
+            <li data-element="water" draggable="true">вода</li>
+        </ul>
+    </div>
+    <div>
+        <h3>Получаем:</h3>
+        <span class="result" id="result"></span>
+        <span><img src="cauldronImg.svg" class="cauldronSVG" alt="cauldron"></span>
+    </div>
+    </div>
+</div>
+
+
+<script src="formulas.js"></script>
+<script src="cauldron.js"></script>
+</body>
+</html>
